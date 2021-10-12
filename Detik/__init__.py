@@ -16,7 +16,7 @@ def ekstraksi_data():
         waktu = result[1]
 
         result = soup.find('div', {'class': 'col-md-6 col-xs-6 gempabumi-detail no-padding'})
-        result = result.findchildren('li')
+        result = result.findChildren('li')
         i = 0
         magnitudo = None
         kedalaman = None
@@ -59,11 +59,11 @@ def tampilkan_data(result):
         return
 
     print('Gempa terakhir berdasarkan BMKG')
-    print(f"Tanggal{result['tanggal']}")
-    print(f"Waktu{result['waktu']}")
-    print(f"Magnitudo{result['magnitudo']}")
-    print(f"Kedalaman{result['kedalaman']}")
-    print(f"Lokasi{result['lokasi']}")
+    print(f"Tanggal {result['tanggal']}")
+    print(f"Waktu {result['waktu']}")
+    print(f"Magnitudo {result['magnitudo']}")
+    print(f"Kedalaman {result['kedalaman']}")
+    print(f"Lokasi {result['lokasi']}")
     print(f"Koordinat: LS = {result['koordinat']['ls']}, BT = {result['koordinat']['bt']}")
-    print(f"Dirasakan{result['dirasakan']}")
+    print(f"{result['dirasakan']}")
 
