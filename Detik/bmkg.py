@@ -66,4 +66,3 @@ def tampilkan_data(result):
     print(f"Lokasi {result['lokasi']}")
     print(f"Koordinat: LS = {result['koordinat']['ls']}, BT = {result['koordinat']['bt']}")
     print(f"{result['dirasakan']}")
-
